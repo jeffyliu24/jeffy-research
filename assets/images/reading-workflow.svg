@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">文献阅读流程示意图</title>
+  <desc id="desc">从研究问题到方法、证据、局限和个人启发的阅读流程。</desc>
+  <rect width="960" height="420" fill="#f5f3ee"/>
+  <g fill="none" stroke="#2f513b" stroke-width="3">
+    <path d="M210 210h115"/>
+    <path d="M430 210h115"/>
+    <path d="M650 210h115"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="70" y="135" width="140" height="150" rx="8" fill="#ffffff" stroke="#ded9cd"/>
+      <text x="140" y="200" font-size="28" font-weight="700" fill="#17201b">问题</text>
+      <text x="140" y="236" font-size="16" fill="#5d6962">为什么研究</text>
+    </g>
+    <g>
+      <rect x="325" y="135" width="140" height="150" rx="8" fill="#ffffff" stroke="#ded9cd"/>
+      <text x="395" y="200" font-size="28" font-weight="700" fill="#17201b">方法</text>
+      <text x="395" y="236" font-size="16" fill="#5d6962">怎么证明</text>
+    </g>
+    <g>
+      <rect x="545" y="135" width="140" height="150" rx="8" fill="#ffffff" stroke="#ded9cd"/>
+      <text x="615" y="200" font-size="28" font-weight="700" fill="#17201b">证据</text>
+      <text x="615" y="236" font-size="16" fill="#5d6962">是否支撑</text>
+    </g>
+    <g>
+      <rect x="765" y="135" width="140" height="150" rx="8" fill="#2f513b"/>
+      <text x="835" y="200" font-size="28" font-weight="700" fill="#ffffff">启发</text>
+      <text x="835" y="236" font-size="16" fill="#dbe6dc">我能带走什么</text>
+    </g>
+  </g>
+</svg>
