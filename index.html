@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jeffy | 文献笔记与技术想法</title>
+    <meta
+      name="description"
+      content="jeffy 的个人博客，记录阅读的文献、文献笔记和技术性的想法。"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="jeffy home">
+        <span class="brand-mark">j</span>
+        <span>jeffy</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#notes">文献笔记</a>
+        <a href="#ideas">技术想法</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Reading, notes, and technical thoughts</p>
+          <h1>
+            <span>把读过的文献和</span>
+            <span>想清楚的技术问题，</span>
+            <span>慢慢整理成</span>
+            <span>自己的知识地图。</span>
+          </h1>
+          <p class="hero-text">
+            这里是 jeffy 的个人博客：用于沉淀文献阅读，以及记录技术性的想法、实验和问题拆解。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#notes">看文献笔记</a>
+            <a class="button secondary" href="#ideas">看技术想法</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="博客概览">
+          <div class="panel-topline">
+            <span>jeffy's desk</span>
+            <span>2026</span>
+          </div>
+          <div class="desk-card">
+            <span class="desk-label">Current focus</span>
+            <strong>文献阅读</strong>
+            <p>从问题、方法、证据和启发四个角度整理每篇文章。</p>
+          </div>
+          <div class="mini-grid">
+            <div>
+              <span>Notes</span>
+              <strong id="noteCount">0</strong>
+            </div>
+            <div>
+              <span>Ideas</span>
+              <strong id="ideaCount">0</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Latest writing</p>
+          <h2>最近更新</h2>
+        </div>
+        <div id="latestPosts" class="post-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="notes" class="section-band split-layout">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Literature notes</p>
+          <h2>文献笔记</h2>
+          <p>
+            每篇笔记都建议保留：研究问题、方法、关键结论、局限、对自己的启发。这样以后回看时不会只剩标题。
+          </p>
+        </div>
+        <div id="literaturePosts" class="post-list"></div>
+      </section>
+
+      <section id="ideas" class="section-band split-layout">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Technical thoughts</p>
+          <h2>技术想法</h2>
+          <p>
+            用来放技术方案、工具尝试、代码经验、踩坑记录和你暂时还没完全想清楚的问题。
+          </p>
+        </div>
+        <div id="ideaPosts" class="post-list"></div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div>
+          <p class="eyebrow">About jeffy</p>
+          <h2>一个持续生长的个人知识空间。</h2>
+        </div>
+        <p>
+          这个博客先从轻量开始：漂亮、清晰、好维护。等文章多起来之后，可以继续增加全文搜索、标签页、
+          文献引用格式、RSS 和自动发布流程。
+        </p>
+      </section>
+
+      <section id="reader" class="reader-section" hidden>
+        <a class="reader-back" href="#home">返回首页</a>
+        <article class="reader-article">
+          <div class="post-meta">
+            <span id="readerType"></span>
+            <time id="readerDate"></time>
+          </div>
+          <h2 id="readerTitle"></h2>
+          <div id="readerTags" class="tag-row"></div>
+          <div id="readerContent" class="reader-content"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 jeffy</span>
+      <span>Built for careful reading and useful notes.</span>
+    </footer>
+
+    <template id="postCardTemplate">
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-type"></span>
+          <time></time>
+        </div>
+        <h3></h3>
+        <p></p>
+        <div class="tag-row"></div>
+        <a class="read-link" href="#">阅读全文</a>
+      </article>
+    </template>
+
+    <script src="posts-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

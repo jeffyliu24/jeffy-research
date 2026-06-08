@@ -1,0 +1,7 @@
+.superpowers/
+node_modules/
+dist/
+.preview-server.*
+preview-*.png
+.DS_Store
+Thumbs.db

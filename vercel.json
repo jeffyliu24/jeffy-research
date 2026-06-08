@@ -1,0 +1,6 @@
+{
+  "buildCommand": "node scripts/build-posts.js && node scripts/build-site.js",
+  "outputDirectory": "dist",
+  "cleanUrls": true
+}
+

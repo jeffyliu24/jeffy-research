@@ -1,0 +1,10 @@
+[build]
+  publish = "dist"
+  command = "node scripts/build-posts.js && node scripts/build-site.js"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+

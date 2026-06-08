@@ -1,0 +1,13 @@
+{
+  "name": "jeffy-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "jeffy's static blog for literature notes and technical thoughts.",
+  "scripts": {
+    "build": "node scripts/build-posts.js && node scripts/build-site.js",
+    "build:posts": "node scripts/build-posts.js",
+    "build:site": "node scripts/build-site.js",
+    "test": "node tests/smoke.test.js"
+  }
+}
+
